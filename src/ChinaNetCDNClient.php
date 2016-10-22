@@ -81,11 +81,8 @@ class ChinaNetCDNClient
         $this->timeout = $timeout;
     }
 
-    protected function getQuery($params, $encode = false)
+    protected function getQuery($params)
     {
-        if ($encode === true) {
-            $params = array_map('rawurlencode', $params);
-        }
         return http_build_query($params, '', '&', PHP_QUERY_RFC3986);
     }
 
