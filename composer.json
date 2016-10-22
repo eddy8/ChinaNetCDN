@@ -1,0 +1,23 @@
+{
+    "name": "eddy/chinanetcdn",
+    "description": "chinanetcdn",
+    "keywords": ["chinanetcdn", "wangsu", "cdn", "php", "sdk"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Eddy",
+            "email": "cumtsjh@163.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4",
+        "guzzlehttp/guzzle": "^5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "eddy\\": "src/"
+        }
+    }
+}
