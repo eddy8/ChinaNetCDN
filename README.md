@@ -7,7 +7,7 @@ http 请求使用 Guzzle 三方库（v5.3），具体文档可参考：https://g
 
 ## 安装
 ```
-composer require eddy\chinanetcdn
+composer require eddy/chinanetcdn
 ```
 
 ## 使用方法
