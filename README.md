@@ -31,8 +31,10 @@ $response = $client->contReceiver(
     ]
 );
 
-// http 请求返回内容
-echo $response->getBody();
-// http 响应状态码
-echo $response->getStatusCode();
+if ($response !== false) {
+    // http 请求返回内容
+    echo $response->getBody();
+    // http 响应状态码
+    echo $response->getStatusCode();
+}
 ```

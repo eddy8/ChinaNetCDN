@@ -58,6 +58,8 @@ class ChinaNetCDNClient
         } catch (\GuzzleHttp\Exception\TransferException $e) {
             $response = $e->getResponse();
             return $response;
+        } catch (\Exception $e) {
+            return false;
         }
     }
 
